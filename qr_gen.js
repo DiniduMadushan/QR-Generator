@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector(".wrapper");
-    const header = wrapper.querySelector(".header h1");
+    const header = wrapper.querySelector("header");
     const qrInput = wrapper.querySelector(".form input");
     const generateBtn = wrapper.querySelector(".form button");
     const qrImg = wrapper.querySelector(".qr-code img");
