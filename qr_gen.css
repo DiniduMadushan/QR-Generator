@@ -1,0 +1,143 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  background: #3498DB;
+  justify-content: center;
+}
+.wrapper{
+  height: 250px;
+  width: 510px;
+  max-width: 560px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.wrapper.active{
+  height: 580px;
+}
+.wrapper header{
+    text-align: center;
+}
+.wrapper header h1{
+  font-size: 21px;
+  font-weight: 500;
+}
+.wrapper header img{
+  margin-top: 20px;
+}
+
+.wrapper .form{
+  margin: 20px 0 25px;
+}
+.form :where(button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+
+.form button{
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 15px;
+  background: #3498DB;
+  border-radius: 20px;
+}
+
+.form button:hover {
+    background: #4c4eea;
+    background-image: -webkit-linear-gradient(top, #fc3cf9, #3498db);
+    background-image: -moz-linear-gradient(top, #fc3cf9, #3498db);
+    background-image: -ms-linear-gradient(top, #fc3cf9, #3498db);
+    background-image: -o-linear-gradient(top, #fc3cf9, #3498db);
+    background-image: linear-gradient(to bottom, #fc3cf9, #3498db);
+    text-decoration: none;
+  }
+
+  .form button.loaded { 
+    pointer-events: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    background: #40d760;
+    border-radius: 0px;
+    opacity: 0.7;
+}
+
+.qr-code{
+  opacity: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 2px solid #4159c4;
+}
+.wrapper.active .qr-code{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.qr-code img{
+  width: 170px;
+}
+.qr-code div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qr-code p {
+    margin: 5px 0px;
+  }
+
+  .print-btn {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .print-btn button {
+    background-color: #007bff;
+    width: 100%;
+    color: #fff; 
+    border: none;
+    border-radius: 15px; 
+    padding: 10px 30px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+
+  .print-btn.visible {
+    display: block;
+  }
+
+  .print-btn button:hover {
+    background-color: #0056b3; 
+    
+  }
+
+
+
+  
+
+

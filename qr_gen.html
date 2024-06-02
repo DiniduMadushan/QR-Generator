@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr-code</title>
+    <link href="qr.css" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="wrapper">
+        <header>
+          <h1>Patient is successfully registered!</h1>
+          <img src="success.png" alt="success">
+        </header>
+        <div class="form">
+          <input type="hidden" value="patient_id">
+          <button>Generate QR Code</button>
+        </div>
+        <div class="qr-code">
+            
+            <div>
+                <img src="" alt="qr-code">
+            </div>
+            <div>
+                <h3>Base hospital - Kolonna</h3>
+                <p>Name : Joss Butler</p>
+                <p>NIC  : 97234567v</p>
+                <p>Phone: 0703451234</p>
+                <p>Email: josbuttler@gmail.com</p>
+            </div>
+          
+        </div>
+
+        <div class="print-btn">
+            <button>Print</button>
+        </div>
+
+      </div>
+
+    <script src="qr.js"></script>
+
+  </body>
+</html>
