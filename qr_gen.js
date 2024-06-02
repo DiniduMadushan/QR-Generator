@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector(".wrapper");
+    const header = wrapper.querySelector(".header h1");
     const qrInput = wrapper.querySelector(".form input");
     const generateBtn = wrapper.querySelector(".form button");
     const qrImg = wrapper.querySelector(".qr-code img");
@@ -18,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
             generateBtn.innerText = "QR Code Successfully Generated !";
             generateBtn.classList.add("loaded");
             print_btn.classList.add("visible");
+            qrInput.classList.add("invisible");
+            header.classList.add("invisible");
             
         };
     };
